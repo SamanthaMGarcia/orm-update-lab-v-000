@@ -46,6 +46,7 @@ class Student
   end
 
   def create
+    sql = <<-SQL
   end
 
 end

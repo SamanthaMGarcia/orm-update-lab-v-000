@@ -46,8 +46,8 @@ class Student
   end
 
   def self.create
-    sql = "CREATE students SET name = ?, grade = ? WHERE id = ?"
-    DB[:conn].execute(sql, self.name, self.grade, self.id)
+    student = student.new(name, grade)
+    student.save
   end
 
 end

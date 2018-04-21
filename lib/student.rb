@@ -46,7 +46,8 @@ class Student
   end
 
   def create
-    sql = <<-SQL
+    sql = "CREATE students SET name = ?, grade = ? WHERE id = ?"
+    DB[:conn].execute(sql, self.name, self.grade, self.id)
   end
 
 end

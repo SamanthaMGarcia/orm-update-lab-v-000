@@ -31,7 +31,7 @@ class Student
      self.update
    else
      sql = <<-SQL
-       INSERT INTO songs (name, album)
+       INSERT INTO students (name, album)
        VALUES (?, ?)
    SQL
 
